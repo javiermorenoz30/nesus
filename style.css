@@ -1,0 +1,28 @@
+*{box-sizing:border-box;font-family:Arial,sans-serif}
+body{margin:0;background:#050816;color:white;overflow-x:hidden}
+.particles{position:fixed;inset:0;background:
+radial-gradient(circle at 20% 20%,#174ea633,transparent 25%),
+radial-gradient(circle at 80% 40%,#8a2be233,transparent 25%);
+z-index:-1}
+header{display:flex;justify-content:space-between;padding:25px 8%;align-items:center}
+.logo{font-size:28px;font-weight:900;letter-spacing:3px}.logo span{color:#00d9ff}
+nav a{color:white;text-decoration:none;margin:15px}
+.hero{min-height:85vh;display:flex;align-items:center;justify-content:space-around;padding:5%}
+.hero-text{max-width:650px}
+.tag{color:#00d9ff}
+h1{font-size:55px;line-height:1.05}
+button{background:linear-gradient(90deg,#00d9ff,#8b5cff);border:0;color:white;padding:16px 35px;border-radius:30px;font-size:17px;cursor:pointer}
+.hologram{width:300px;height:300px;position:relative;animation:float 4s infinite}
+.circle{position:absolute;width:100%;height:100%;border:3px solid #00d9ff;border-radius:50%;box-shadow:0 0 60px #00d9ff}
+.card{position:absolute;top:80px;left:70px;background:#ffffff11;border:1px solid #ffffff33;padding:40px;text-align:center;border-radius:20px;backdrop-filter:blur(10px)}
+.section,.contact,.process{padding:70px 10%;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:50px 8%}
+.box{padding:35px;background:#ffffff10;border:1px solid #ffffff20;border-radius:20px;transition:.4s}
+.box:hover{transform:translateY(-15px);box-shadow:0 0 30px #00d9ff}
+.stats{display:flex;justify-content:center;gap:80px;padding:60px;font-size:20px;text-align:center}
+.stats b{font-size:45px;color:#00d9ff}
+.steps span{display:inline-block;margin:15px;padding:20px;border-radius:20px;background:#ffffff12}
+input,textarea{display:block;width:80%;max-width:500px;margin:15px auto;padding:15px;background:#111827;color:white;border:1px solid #333;border-radius:10px}
+footer{text-align:center;padding:30px;background:#02040b}
+@keyframes float{50%{transform:translateY(-20px)}}
+@media(max-width:800px){h1{font-size:35px}.hero{flex-direction:column}.grid{grid-template-columns:1fr}.stats{flex-direction:column}}
