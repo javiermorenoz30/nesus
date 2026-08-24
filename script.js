@@ -1,3 +1,0 @@
-const elements=document.querySelectorAll('.hero,.section,.grid,.stats,.process,.contact,.box');
-const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity=1;e.target.style.transform='translateY(0)'}})},{threshold:.15});
-elements.forEach(el=>{el.style.opacity=0;el.style.transform='translateY(60px)';el.style.transition='1s ease';observer.observe(el)});
